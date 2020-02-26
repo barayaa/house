@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+body html{
+    font-size: 16px;
+    color: rgba(0,0,0, .87);
+    font-family: "montserral",sans-serif; 
+    line-height: 1.8;
+    margin: 0;
+    font-weight: 500;
+}
+.topbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color:lightgrey;
+    padding: 30px 87px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+.topbar nav{
+    background-color:rgba(255, 255, 255, 0.5);
+    float: left;
+}
+.topbar nav a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 500px;
+    margin: 0 53px;
+ 
+}
+.topbar nav a:hover{
+    color: #000000;
+}
+.topbar .social{
+    float: right;
+}
+.social a {
+     padding: 0 12px;
+     opacity: .5;
+}
+.social a:hover{
+    opacity: 1;
+}
+.banniere img{
+    width: 100%;
+    height: 417px;
+
+}
+.main {
+    float: left;
+    background-color:lightyellow;
+    width: calc(100% - 375px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, .01);
+    position: relative;
+    z-index: 1;
+}
+.sidebar {
+    position: relative;
+    float: right;
+    background-color:white;
+   height: 100%;
+    width: 375px;
+    padding: 40px;
+    z-index: 1;
+}
+.sidebar h4 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 35px 0;
+}
+.sidebar h4:first-child {
+    margin-top: 0;
+}
+.sidebar a{
+    color:blueviolet;
+    text-decoration: none;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+}
+.sidebar li{
+    padding: 6px 0;
+
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar hr {
+    border:solid;
+    background-color: #c4c4c4;
+    height: 0.5;
+    margin: 50px 0;
+}
+.contenair{
+   
+    margin: 0 auto;
+
+}
+.article {
+    padding-left: 333px ;
+    position: relative;
+    overflow: hidden;
+    margin: 50px ;
+    min-height: 203px;
+    max-width: 940px;
+    
+}
+article a {
+    color: inherit;
+    text-decoration: none ;
+}
+.article a:hover{
+    text-decoration: underline;
+}
+.article-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 308px;
+    margin-right: 25px;
+}
+.pseudo{
+    text-align: center;
+    margin: o ;
+}
+
+.article-date{
+    margin-bottom: 5px ;
+    font-weight: 300px;
+    color: rgba(0, 0, 0, .6) ;
+}
+.article-title{
+    font-size: 2.25em;
+    line-height: 1.1 ;
+    font-family: "cardo", serif;
+    margin: 0 0 15px  0;
+}
+.sidebar li a::after {
+    content: attr(data-count);
+    float: right;
+    line-height: 25px;
+    background: gray;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+
+}
+fieldset{ 
+    color:white;
+    box-shadow: 20px black;
+    border: none;
+    background-image: url("joli.jpg");
+}
+.form{
+    display: grid; grid-template-columns: 1fr 3fr;
+    margin: 1.25rem 0;
+
+}
+.form input {
+    border-top: none;border-left: none;border-right: none;
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+}
+.form label {
+    text-align: end;
+    margin-right: 1.875rem;
+}
+
+ h1{
+    text-align: center;
+}
+.formulaire{
+ 
+    justify-content: center;
+    padding: 10% 30%;
+    flex-direction: row;
+}
+
+.button {
+    text-align: center;
+}
+.footer{
+  background-color: lightskyblue;
+    clear: both;
+    text-align: center;
+}
+
+.article-img img:hover{
+    transform: scale(1.1) rotate(1deg);
+}
+
+@media screen and (max-width:980px) {
+    body {
+        display: block;
+    }
+    .main {
+        width: 100%;
+    } 
+    .sidebar{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:980px) {
+    .article{
+        padding-left: 0;
+    
+    }
+    .article-img img
+    
+     {
+        position: static;
+        margin-bottom: 1rem;
+        width: 95%;
+        display: block;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .topbar nav, .social {
+        float: none;
+        text-align: center;
+    }
+
+    .topbar nav {
+        margin-bottom: 15px;
+       
+    }
+    .topbar nav a {
+        margin: 0 20px;
+        margin: 0 20px 5px 20px;
+        white-space: nowrap;
+    }
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        right: 0;
+    }
+    .footer{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+}
